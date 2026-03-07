@@ -25,6 +25,7 @@ public class GestorTareas {
         }
     }
 
+    //Buscamos la tarea segun el id que tenga O(n) porque recorre toda la lista
     public void buscarPorId(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id){
