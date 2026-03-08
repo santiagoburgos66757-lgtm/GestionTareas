@@ -34,7 +34,7 @@ public class GestorTareas {
             }
         }
     }
-//Complejidad O(n): Buscamos la tarea por id y cambia su estado, recorriendo la lista.
+//Complejidad O(n): Buscamos la tarea por id y cambia su estado, recorriendo la lista
     public void marcarCompletada(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id && t.isCompletada() == false){
@@ -44,7 +44,7 @@ public class GestorTareas {
         }
     }
 
-    //Complejidad O(n): Localiza la tarea y la elimina; al usar un ArrayList los elementos se desplazan.
+    //Complejidad O(n): Localiza la tarea y la elimina; al usar un ArrayList los elementos se desplazan
     public void eliminarTarea(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id){
