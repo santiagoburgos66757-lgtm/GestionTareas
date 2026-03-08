@@ -4,7 +4,13 @@
 // Complejidad: O(n)
 
 // Justificación: El ciclo 'for' revisa la lista de elementos una sola vez de principio a fin.
+//Parte 1:
 
+// Fragmento 1
+// Complejidad: O(n)
+//
+// Justificación: El ciclo 'for' revisa la lista de elementos una sola vez de principio a fin,
+// comparando cada elemento con el máximo actual
 
 public static int encontrarMaximo(int[] array) {
     int max = array[0];
