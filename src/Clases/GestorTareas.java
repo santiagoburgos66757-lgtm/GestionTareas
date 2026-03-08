@@ -14,7 +14,7 @@ public class GestorTareas {
         listaTareas.add(tarea);
     }
 
-    //mostramos todas las tareas 0(n)
+    //Complejidad O(n): ya que recorre todas las tareas para mostrarlas
     public void listarTareas() {
         if (listaTareas.isEmpty()) {
             System.out.println("No hay tareas registradas.");
