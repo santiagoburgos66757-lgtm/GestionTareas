@@ -53,12 +53,11 @@ public class Tarea {
         this.completada = completada;
     }
 
-    @Override
+@Override
     public String toString() {
         String estado = completada ? "[Completada]" : "[Pendiente]";
         return "ID: " + id + " | Prioridad: " + prioridad + " | " + estado + " | " + descripcion;
     }
-
 
 
 

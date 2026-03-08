@@ -9,7 +9,7 @@ public class GestorTareas {
     public GestorTareas() {
         this.listaTareas = new ArrayList<>();
     }
-    //agregamos una tarea a la lista O(1)
+    //Complejidad O(1): agregamos al final una tarea a la lista lo cual es constante
     public void agregarTarea(Tarea tarea) {
         listaTareas.add(tarea);
     }
@@ -25,7 +25,7 @@ public class GestorTareas {
         }
     }
 
-    //Buscamos la tarea segun el id que tenga O(n) porque recorre toda la lista
+    //Complejidad O(n): Buscamos la tarea segun el id que tenga al recorrer toda la lista
     public void buscarPorId(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id){
@@ -34,7 +34,7 @@ public class GestorTareas {
             }
         }
     }
-
+//Complejidad O(n): Buscamos la tarea por id y cambia su estado, recorriendo la lista.
     public void marcarCompletada(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id && t.isCompletada() == false){
@@ -44,15 +44,18 @@ public class GestorTareas {
         }
     }
 
+    //Complejidad O(n): Localiza la tarea y la elimina; al usar un ArrayList los elementos se desplazan.
     public void eliminarTarea(int id){
         for (Tarea t : listaTareas) {
             if(t.getId()== id){
                 listaTareas.remove(id-1);
 
+                break;
+
             }
         }
     }
-
+//Complejidad O(n): Se Revisa todas las tareas para filtrar las que no están completadas.
     public void obtenerTareasPendientes(){
         for (Tarea t : listaTareas) {
             if(t.isCompletada() == false){
@@ -62,7 +65,7 @@ public class GestorTareas {
         }
     }
 
-    //
+    //Complejidad O(n): Recorre toda la lista verificando la prioridad de cada tarea.
     public void obtenerTareasPrioridad(int prioridad){
         for (Tarea t : listaTareas) {
             if(t.getPrioridad() == prioridad){

@@ -14,12 +14,12 @@ void main() {
     gestor.marcarCompletada(1);
     gestor.marcarCompletada(5);
     gestor.buscarPorId(1);
-    gestor.eliminarTarea(2);
-    System.out.println("------------------");
+    gestor.eliminarTarea(1);
+    System.out.println("--------------------");
     gestor.listarTareas();
-    System.out.println("------------------");
+    System.out.println("--------------------");
     gestor.obtenerTareasPendientes();
-    System.out.println("------------------");
+    System.out.println("---------------------");
     gestor.obtenerTareasPrioridad(2);
 
 }
