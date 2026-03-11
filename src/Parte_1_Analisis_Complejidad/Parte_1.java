@@ -3,7 +3,7 @@
 // Fragmento 1
 // Complejidad: O(n)
 //
-// Justificación: El ciclo 'for' revisa la lista de elementos una sola vez de principio a fin,
+// Justificación: El ciclo for revisa la lista de elementos una sola vez de principio a fin,
 // comparando cada elemento con el máximo actual
 
 public static int encontrarMaximo(int[] array) {
@@ -17,10 +17,10 @@ public static int encontrarMaximo(int[] array) {
 }
 
 // Fragmento 2
-// Complejidad: O(√n)
+// Complejidad: O(n)
 
-// Justificación: nos podemos fijar que el 'for' no llega hasta 'n', sino que se detiene en la raíz
-// cuadrada de 'n' (Math.sqrt). Por eso este asume esa complejidad y no revisa todos los números.
+// Justificación: nos podemos fijar que el for no llega hasta 'n', sino que se detiene en 
+//(Math.sqrt). Por eso este asume esa complejidad y no revisa todos los números.
 
 public static boolean esPrimo(int n) {
     if (n <= 1) return false;
@@ -35,9 +35,7 @@ public static boolean esPrimo(int n) {
 
 // Justificación: Como hay un ciclo dentro de otro, las operaciones se multiplican.
 // El primer ciclo pasa por cada fila (N) y el de adentro pasa por cada columna
-//de esa fila (M). Pongo que es N * M y no N^2 porque la matriz podría ser un
-// rectángulo (por ejemplo de 3x5) y no un cuadrado perfecto, así que lo más
-// exacto es multiplicar la cantidad de filas por la de columnas.
+//de esa fila (M). 
 
 public static void imprimirMatriz(int[][] matriz) {
     for (int i = 0; i < matriz.length; i++) {
