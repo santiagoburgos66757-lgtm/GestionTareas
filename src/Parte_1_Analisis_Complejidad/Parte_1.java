@@ -50,7 +50,7 @@ public static void imprimirMatriz(int[][] matriz) {
 // Complejidad: O(log n)
 
 // Justificación: Es mejor de esta forma porque no busca elemento por elemento. Como divide el
-// arreglo a la mitad en cada ciclo 'while' (descartando la otra mitad), el número de
+// arreglo a la mitad en cada ciclo while (descartando la otra mitad), el número de
 // operaciones se reduce, creciendo en forma de logaritmo.
 
 public static int busquedaBinaria(int[] array, int objetivo) {
